@@ -1,181 +1,487 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>fatkid5600</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>FATKID5600s CULT</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: "Verdana", "Tahoma", Arial, sans-serif;
-            background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
-            background-repeat: repeat;
-            background-color: #000000;
-            color: #00ffcc;
-        }
+<style>
+/* ===== GLOBAL ===== */
 
-        a {
-            color: #ff66ff;
-            text-decoration: underline;
-        }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-        a:hover {
-            color: #ffff00;
-            background-color: #000000;
-        }
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background:
+        repeating-linear-gradient(
+            0deg,
+            #d8d8d8 0px,
+            #d8d8d8 2px,
+            #e9e9e9 2px,
+            #e9e9e9 40px
+        ),
+        repeating-linear-gradient(
+            90deg,
+            #d8d8d8 0px,
+            #d8d8d8 2px,
+            #e9e9e9 2px,
+            #e9e9e9 40px
+        );
+    color:#2d2d2d;
+    padding:30px;
+}
 
-        /* Page container */
-        .page {
-            width: 760px;
-            margin: 20px auto;
-            border: 4px ridge #00ffcc;
-            background-color: rgba(0, 0, 0, 0.85);
-        }
+/* ===== WRAPPER ===== */
 
-        /* Header */
-        .header {
-            text-align: center;
-            padding: 20px;
-            background: linear-gradient(90deg, #ff00ff, #00ffff);
-            color: black;
-            font-size: 28px;
-            font-weight: bold;
-            text-shadow: 1px 1px #ffffff;
-        }
+.wrapper{
+    width:1100px;
+    margin:auto;
+    border:2px solid #707070;
+    background:#cfcfcf;
+    box-shadow:0 0 18px rgba(0,0,0,0.4);
+}
 
-       
-        marquee {
-            background-color: #000000;
-            color: #00ffcc;
-            padding: 6px;
-            font-size: 14px;
-        }
+/* ===== HEADER ===== */
 
-        
-        .content {
-            display: table;
-            width: 100%;
-        }
+.header{
+    height:150px;
+    background:
+        linear-gradient(rgba(255,255,255,0.65), rgba(255,255,255,0.65)),
+        url('https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop');
+    background-size:cover;
+    border-bottom:2px solid #666;
+    position:relative;
+}
 
-        .sidebar {
-            display: table-cell;
-            width: 200px;
-            vertical-align: top;
-            border-right: 3px dashed #ff66ff;
-            padding: 10px;
-        }
+.logo{
+    position:absolute;
+    left:35px;
+    top:25px;
+    color:#4f4f4f;
+    text-shadow:2px 2px #fff;
+}
 
-        .main {
-            display: table-cell;
-            padding: 10px;
-        }
+.logo h1{
+    font-size:52px;
+    letter-spacing:4px;
+}
 
-        /* Boxes */
-        .box {
-            border: 2px dotted #00ffff;
-            margin-bottom: 10px;
-            padding: 8px;
-            background-color: #000000;
-        }
+.logo p{
+    font-size:14px;
+    margin-top:5px;
+}
 
-        .box h2 {
-            margin: 0 0 6px 0;
-            font-size: 16px;
-            color: #ffff00;
-            text-decoration: underline;
-        }
+/* ===== LAYOUT ===== */
 
-        
-        .blink {
-            animation: blink 1s steps(1) infinite;
-        }
+.content{
+    display:flex;
+    gap:12px;
+    padding:12px;
+}
 
-        @keyframes blink {
-            50% { opacity: 0; }
-        }
+/* ===== SIDEBAR ===== */
 
-        
-        .footer {
-            text-align: center;
-            font-size: 12px;
-            padding: 10px;
-            border-top: 3px ridge #00ffcc;
-            color: #ff66ff;
-        }
-    </style>
+.sidebar{
+    width:220px;
+    background:#5d5d5d;
+    border:2px solid #3e3e3e;
+    padding:10px;
+}
+
+.nav-title{
+    color:white;
+    text-align:center;
+    margin-bottom:12px;
+    font-weight:bold;
+    letter-spacing:1px;
+}
+
+.nav-btn{
+    display:block;
+    width:100%;
+    background:linear-gradient(#2d2d2d,#111);
+    color:white;
+    text-decoration:none;
+    padding:10px;
+    margin-bottom:8px;
+    border-radius:6px;
+    border:1px solid #8b8b8b;
+    text-align:center;
+    font-size:13px;
+    transition:0.2s;
+}
+
+.nav-btn:hover{
+    background:linear-gradient(#6f6f6f,#2f2f2f);
+    transform:translateY(-2px);
+}
+
+/* ===== MAIN ===== */
+
+.main{
+    flex:1;
+}
+
+.panel{
+    background:#ececec;
+    border:2px solid #9a9a9a;
+    margin-bottom:14px;
+}
+
+.panel-header{
+    background:linear-gradient(#777,#4d4d4d);
+    color:white;
+    padding:8px;
+    font-size:14px;
+    border-bottom:2px solid #8e8e8e;
+    text-shadow:1px 1px black;
+}
+
+.panel-body{
+    padding:14px;
+    font-size:13px;
+    line-height:1.6;
+}
+
+/* ===== FEATURE GRID ===== */
+
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:14px;
+}
+
+.mini-box{
+    background:#dbdbdb;
+    border:2px solid #8b8b8b;
+    min-height:220px;
+}
+
+.mini-header{
+    background:black;
+    color:white;
+    padding:6px;
+    font-size:13px;
+    text-align:center;
+}
+
+.mini-content{
+    padding:12px;
+    font-size:12px;
+}
+
+.fake-image{
+    width:100%;
+    height:130px;
+    background:
+        linear-gradient(135deg,#6f6f6f,#2a2a2a);
+    border:1px solid #444;
+    margin-bottom:10px;
+}
+
+/* ===== RIGHT BAR ===== */
+
+.rightbar{
+    width:180px;
+}
+
+.widget{
+    background:#dedede;
+    border:2px solid #979797;
+    margin-bottom:12px;
+}
+
+.widget-title{
+    background:#7b7b7b;
+    color:white;
+    padding:7px;
+    text-align:center;
+    font-size:13px;
+    font-weight:bold;
+}
+
+.widget-body{
+    padding:10px;
+    font-size:12px;
+    line-height:1.5;
+}
+
+/* ===== FOOTER ===== */
+
+.footer{
+    background:#5a5a5a;
+    color:white;
+    text-align:center;
+    padding:14px;
+    border-top:2px solid #333;
+    font-size:12px;
+}
+
+/* ===== RETRO DETAILS ===== */
+
+.blink{
+    animation:blink 1s infinite;
+}
+
+@keyframes blink{
+    50%{
+        opacity:0.3;
+    }
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media(max-width:1100px){
+
+    .wrapper{
+        width:100%;
+    }
+
+    .content{
+        flex-direction:column;
+    }
+
+    .sidebar,
+    .rightbar{
+        width:100%;
+    }
+
+    .grid{
+        grid-template-columns:1fr;
+    }
+}
+
+</style>
 </head>
 <body>
 
-<div class="page">
+<div class="wrapper">
 
+    <!-- HEADER -->
     <div class="header">
-        ★★ WELCOME 2 FATKID5600s CULT ★★
+        <div class="logo">
+            <h1>Fatkid5600's CULT</h1>
+            <p>digital archive • software • hardware • games • audio • etc</p>
+        </div>
     </div>
 
-    <marquee scrollamount="5">this site is under construction ★ PowerPC friendly ★ add my ig @fatkid5600 ★</marquee>
-
+    <!-- CONTENT -->
     <div class="content">
 
         <!-- SIDEBAR -->
         <div class="sidebar">
-            <div class="box">
-                <h2>About Me</h2>
-                <p><b>Name:</b> Ben</p>
-                <p><b>Age:</b> 17</p>
-                <p><b>Location:</b> Canada</p>
-                <p class="blink">ONLINE NOW</p>
-            </div>
 
-            <div class="box">
-                <h2>Links</h2>
-                <ul>
-                    <li><a href="#">my games</a></li>
-                    <li><a href="#">my collections</a></li>
-                    <li><a href="#">my photos</a></li>
-                    <li><a href="#">other</a></li>
-                </ul>
-            </div>
+            <div class="nav-title">NAVIGATION</div>
 
-            <div class="box">
-                <h2>Music</h2>
-                <p>Now Playing:</p>
-                <p><i>some newgrounds songs that i add eventua;;y</i></p>
-            </div>
+            <a class="nav-btn" href="#">home</a>
+
+            <a class="nav-btn" href="#">software / game projects</a>
+
+            <a class="nav-btn" href="#">homebrew </a>
+
+            <a class="nav-btn" href="#">hardware projects</a>
+
+            <a class="nav-btn" href="#">console collection</a>
+
+            <a class="nav-btn" href="#">game collection</a>
+
+            <a class="nav-btn" href="#">car audio + subwoofers</a>
+
         </div>
 
-        <!-- MAIN CONTENT -->
+        <!-- MAIN -->
         <div class="main">
-            <div class="box">
-                <h2>Blog Entry</h2>
-                <p><b>01.19.2004</b></p>
-                <p>
-                    sum shit
-                </p>
+
+            <!-- INTRO -->
+            <div class="panel">
+
+                <div class="panel-header">
+                    welcome to fatkid5600s cool awesome website ★
+                </div>
+
+                <div class="panel-body">
+
+                    <p>
+                        this site is my personal retro-tech archive inspired by old
+                        internet design and early web aesthetics. here i post my
+                        software projects, game development work, hardware builds,
+                        game collections, and car audio systems.
+                    </p>
+
+                    <br>
+
+                    <p>
+                        the layout is heavily inspired by old neocities pages and
+                        early 2000s personal sites with metallic grayscale styling,
+                        chunky borders, compact widgets, and retro UI panels.
+                    </p>
+
+                    <br>
+
+                    <p class="blink">
+                        ★ under construction ★
+                    </p>
+
+                </div>
+
             </div>
 
-            <div class="box">
-                <h2>Interests</h2>
-                <ul>
-                    <li>Half Life, Source Engine Games, Other mid 2000s FPS</li>
-                    <li>Subwoofers</li>
-                    <li>Making my own games/homebrew usually in old unity versions</li>
-                    <li>Early 2000s Apple shit (PowerPC, iPods, early OSX and iOS Development</li>
-                </ul>
+            <!-- GRID -->
+            <div class="grid">
+
+                <div class="mini-box">
+                    <div class="mini-header">
+                        SOFTWARE / GAME PROJECTS
+                    </div>
+
+                    <div class="mini-content">
+
+                        <div class="fake-image"></div>
+
+                        <p>
+                            archives for released games, development logs,
+                            prototypes, modding tools, and homebrew software.
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="mini-box">
+                    <div class="mini-header">
+                        HARDWARE PROJECTS
+                    </div>
+
+                    <div class="mini-content">
+
+                        <div class="fake-image"></div>
+
+                        <p>
+                            custom electronics, console mods, restoration work,
+                            embedded projects, and DIY experiments.
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="mini-box">
+                    <div class="mini-header">
+                        CONSOLE COLLECTION
+                    </div>
+
+                    <div class="mini-content">
+
+                        <div class="fake-image"></div>
+
+                        <p>
+                            documenting retro consoles, handhelds,
+                            accessories, imports, and rare hardware.
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="mini-box">
+                    <div class="mini-header">
+                        CAR AUDIO + SUBWOOFERS
+                    </div>
+
+                    <div class="mini-content">
+
+                        <div class="fake-image"></div>
+
+                        <p>
+                            speaker builds, subwoofer setups,
+                            amp installs, tuning, and sound system projects.
+                        </p>
+
+                    </div>
+                </div>
+
             </div>
 
-            <div class="box">
-                <h2>Images</h2>
-                <p>
-                    <img src="https://i.imgur.com/8Km9tLL.gif" alt="gif" />
-                    <img src="https://i.imgur.com/Z6XQ9K4.gif" alt="gif" />
-                </p>
+        </div>
+
+        <!-- RIGHT SIDEBAR -->
+        <div class="rightbar">
+
+            <div class="widget">
+
+                <div class="widget-title">
+                    UPDATES
+                </div>
+
+                <div class="widget-body">
+
+                    <p>
+                        05/13/26 — created site layout
+                    </p>
+
+                    <br>
+
+                    <p>
+                        05/14/26 — adding project pages
+                    </p>
+
+                    <br>
+
+                    <p>
+                        05/15/26 — uploaded console collection photos
+                    </p>
+
+                </div>
+
             </div>
+
+            <div class="widget">
+
+                <div class="widget-title">
+                    CURRENT PROJECT
+                </div>
+
+                <div class="widget-body">
+
+                    <p>
+                        restoring a modded PSP 3000 and rebuilding old
+                        subwoofer enclosure.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="widget">
+
+                <div class="widget-title">
+                    STATUS
+                </div>
+
+                <div class="widget-body">
+
+                    <p>
+                        listening to: breakcore mix
+                    </p>
+
+                    <br>
+
+                    <p>
+                        coding: late at night
+                    </p>
+
+                </div>
+
+            </div>
+
         </div>
 
     </div>
 
+    <!-- FOOTER -->
     <div class="footer">
-        © 2008 fatkid5600 ★ letsgetviolent ★
+        RETRO NODE © 2026 • made with HTML + CSS
     </div>
 
 </div>
