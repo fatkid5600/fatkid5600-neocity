@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Game Projects - FATKID5600</title>
+
+<style>
+/* KEEP YOUR SAME CSS (unchanged) */
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: url('https://i.pinimg.com/736x/fc/0d/ce/fc0dcec1d1aa066e420745a47aee5439.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color:#2d2d2d;
+    padding:30px;
+}
+
+.wrapper{
+    width:1100px;
+    margin:auto;
+    border:2px solid #707070;
+    background:#cfcfcf;
+    box-shadow:0 0 18px rgba(0,0,0,0.4);
+}
+
+.header{
+    height:150px;
+    background:
+        linear-gradient(rgba(255,255,255,0.65), rgba(255,255,255,0.60)),
+        url('https://i.pinimg.com/736x/43/f6/e5/43f6e5eac230f8c83cd3a4c85eb7a30e.jpg');
+    background-size:cover;
+    border-bottom:2px solid #666;
+    position:relative;
+}
+
+.logo{
+    position:absolute;
+    left:35px;
+    top:25px;
+    color:#4f4f4f;
+    text-shadow:2px 2px #fff;
+}
+
+.logo h1{font-size:52px;letter-spacing:4px;}
+.logo p{font-size:14px;margin-top:5px;}
+
+.content{display:flex;gap:12px;padding:12px;}
+
+.sidebar{
+    width:220px;
+    background:#5d5d5d;
+    border:2px solid #3e3e3e;
+    padding:10px;
+}
+
+.nav-title{
+    color:white;text-align:center;margin-bottom:12px;
+    font-weight:bold;letter-spacing:1px;
+}
+
+.nav-btn{
+    display:block;width:100%;
+    background:linear-gradient(#2d2d2d,#111);
+    color:white;text-decoration:none;
+    padding:10px;margin-bottom:8px;
+    border-radius:6px;border:1px solid #8b8b8b;
+    text-align:center;font-size:13px;
+    transition:0.2s;
+}
+
+.nav-btn:hover{
+    background:linear-gradient(#6f6f6f,#2f2f2f);
+    transform:translateY(-2px);
+}
+
+.main{flex:1;}
+
+.panel{
+    background:#ececec;
+    border:2px solid #9a9a9a;
+    margin-bottom:14px;
+}
+
+.panel-header{
+    background:linear-gradient(#777,#4d4d4d);
+    color:white;padding:8px;
+    font-size:14px;
+    border-bottom:2px solid #8e8e8e;
+    text-shadow:1px 1px black;
+}
+
+.panel-body{
+    padding:14px;
+    font-size:13px;
+    line-height:1.6;
+}
+
+/* GAME ENTRY STYLE */
+.game-entry{
+    border-bottom:1px solid #999;
+    padding-bottom:12px;
+    margin-bottom:12px;
+}
+
+.game-entry:last-child{
+    border-bottom:none;
+}
+
+.game-title{
+    font-weight:bold;
+    font-size:14px;
+    margin-bottom:4px;
+}
+
+.game-meta{
+    font-size:11px;
+    color:#555;
+    margin-bottom:6px;
+}
+
+.fake-image{
+    width:100%;
+    height:220px;
+    background:linear-gradient(135deg,#6f6f6f,#2a2a2a);
+    border:1px solid #444;
+    margin-bottom:8px;
+}
+
+.rightbar{width:180px;}
+
+.widget{
+    background:#dedede;
+    border:2px solid #979797;
+    margin-bottom:12px;
+}
+
+.widget-title{
+    background:#7b7b7b;
+    color:white;padding:7px;
+    text-align:center;font-size:13px;font-weight:bold;
+}
+
+.widget-body{
+    padding:10px;font-size:12px;line-height:1.5;
+}
+
+.footer{
+    background:#5a5a5a;color:white;
+    text-align:center;padding:14px;
+    border-top:2px solid #333;font-size:12px;
+}
+
+@media(max-width:1100px){
+    .wrapper{width:100%;}
+    .content{flex-direction:column;}
+    .sidebar,.rightbar{width:100%;}
+}
+
+.game-title a{
+    color:#1a1a1a;
+    text-decoration:none;
+}
+
+.game-title a:hover{
+    text-decoration:underline;
+    color:#000;
+}
+
+.game-img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    border:1px solid #444;
+    margin-bottom:8px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+<div class="header">
+    <div class="logo">
+        <h1>Fatkid5600's CULT</h1>
+        <p>digital archive • software • hardware • games • audio • etc</p>
+    </div>
+</div>
+
+<div class="content">
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+    <div class="nav-title">NAVIGATION</div>
+    <a class="nav-btn" href="../index.html">home</a>
+    <a class="nav-btn" href="../projects/">software / game projects</a>
+    <a class="nav-btn" href="../audio/">audio</a>
+</div>
+
+<!-- MAIN -->
+<div class="main">
+
+<!-- PAGE HEADER -->
+<div class="panel">
+    <div class="panel-header">GAME PROJECTS ARCHIVE</div>
+    <div class="panel-body">
+        <p>
+            archive of my released games and projects i have contributed to.
+            includes prototypes, finished releases, and collaborative work.
+        </p>
+    </div>
+</div>
+
+<!-- RELEASED GAMES -->
+<div class="panel">
+    <div class="panel-header">RELEASED GAMES</div>
+    <div class="panel-body">
+
+<div class="game-entry">
+
+    <div class="game-title">
+        <a href="https://fatkid5600.itch.io/soulja-rvn-3">SOULJA RVN 3</a>
+    </div>
+
+    <div class="game-meta">
+        2026 • Win / Mac / Linux / iOS / Android • Endless Runner
+    </div>
+
+    <a href="https://fatkid5600.itch.io/soulja-rvn-3">
+        <img src="https://img.itch.zone/aW1nLzI1Njg1NjU4LmpwZWc=/315x250%23c/G%2BYOAc.jpeg" class="game-img">
+    </a>
+
+    <p>
+        novelty / shovelware endless runner inspired by 2010–2014 cloud rap.
+    </p>
+
+</div>
+
+
+<div class="game-entry">
+
+    <div class="game-title">
+        <a href="https://fatkid5600.itch.io/bussin-simulator-2007">Bussin Simulator 2007</a>
+    </div>
+
+    <div class="game-meta">
+        2025 • Windows XP / PowerPC MacOS X • Simulation
+    </div>
+
+    <a href="https://fatkid5600.itch.io/bussin-simulator-2007">
+        <img src="https://img.itch.zone/aW1hZ2UvMzk1Mjk0OC8yMzU2NjI3NS5wbmc=/original/ZptZrO.png" class="game-img">
+    </a>
+
+    <p>
+        smoke darts, drink and listen to music. do whatever.
+    </p>
+
+</div>
+
+    </div>
+</div>
+
+<!-- CONTRIBUTIONS -->
+<div class="panel">
+    <div class="panel-header">PROJECTS I WORKED ON</div>
+    <div class="panel-body">
+
+     <div class="game-entry">
+
+    <div class="game-title">
+        <a href="https://store.steampowered.com/app/4651030/PeeWee_Purpdranks_FOENEM_Clicker/">Peewee Purpdrank's: FOENEM Clicker</a>
+    </div>
+
+    <div class="game-meta">
+        Let's Get Violent • 2026 • Win/Mac/Linux/iOS/Android • Casual
+    </div>
+
+    <a href="https://store.steampowered.com/app/4651030/PeeWee_Purpdranks_FOENEM_Clicker/">
+        <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4651030/808465938136b9da7f85802a15b01411ac6abdc3/header.jpg?t=1777761210" class="game-img">
+    </a>
+
+    <p>
+        My contribution: porting the game to Mac and iOS. All the XCode work for the iOS port was handled by me, along with the MacOS port build seperately from XCode.
+    </p>
+
+</div>
+
+    </div>
+</div>
+
+</div>
+
+<!-- RIGHT BAR -->
+<div class="rightbar">
+
+    <div class="widget">
+        <div class="widget-title">STATUS</div>
+        <div class="widget-body">
+            <p>currently working on nothing</p>
+        </div>
+    </div>
+
+</div>
+
+</div>
+
+<div class="footer">
+    fatkid5600 © 2026 • on foenem grave 
+</div>
+
+</div>
+
+</body>
+</html>
